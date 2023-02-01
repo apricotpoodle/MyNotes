@@ -1,7 +1,7 @@
 # Docker
 
 
-[Démystifier ENTRYPOINT et CMD dans Docker](https://aws.amazon.com/fr/blogs/france/demystifier-entrypoint-et-cmd-dans-docker/)
+[Démystifier ENTRYPOINT et CMD dans Docker](https://aws.amazon.com/fr/blogs/france/demystifier-entrypoint-et-cmd-dans-docker/) - Que choisir entre ENTRY_POINt et CMD dans un Dockerfile.
 
 [Docker Swarm](https://dockerswarm.rocks/) - how-to's on docker swarm.
 
