@@ -1,5 +1,8 @@
 # Docker
 
+
+[Démystifier ENTRYPOINT et CMD dans Docker](https://aws.amazon.com/fr/blogs/france/demystifier-entrypoint-et-cmd-dans-docker/)
+
 [Docker Swarm](https://dockerswarm.rocks/) - how-to's on docker swarm.
 
 Export an image to a tar file:
