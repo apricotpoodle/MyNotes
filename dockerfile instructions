@@ -1,0 +1,20 @@
+# Dockerfile Instructions
+
+**You hopefully remember, too, that each instruction creates a new different layer in your image.**
+
+- FROM  : Sets the base image.
+- CMD : Set the command to be executed when running the image. Can also be used to set the default arguments to the ENTRYPOINT instruction.
+- RUN : Executes a command to help build your image.
+- EXPOSE : Opens up networking ports.
+- VOLUME : Sets a disk share.
+- COPY : Copies files into your image from your local disk.
+- LABEL : Adds metadata to an image in a key-value pair format.
+- ENV : Sets an environment variable to your container.
+- ENTRYPOINT : Determines which executable runs when the container starts. (Note:  use CMD to passoptions to the executable.)
+    ```console
+    cat Dockerfile
+    FROM debian:latest
+    LABEL maintainer="Roger Rabbit"
+    ENTRYPOINT ["/bin/ping"]
+    CMD ["www.docker.com"]
+    ```
