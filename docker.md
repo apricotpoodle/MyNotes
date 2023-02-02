@@ -17,6 +17,8 @@ Load an image from a tar:
 docker load -i <NAME>.tar 
 ```
 
+...
+
 ## Managing Docker Images
 
 ### Download an image
