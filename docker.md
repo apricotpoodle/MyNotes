@@ -16,6 +16,7 @@ Load an image from a tar:
 ```console
 docker load -i <NAME>.tar 
 ```
+
 ## Managing Docker Images
 
 ### Download an image
