@@ -17,8 +17,6 @@ Load an image from a tar:
 docker load -i <NAME>.tar 
 ```
 
-...
-
 ## Managing Docker Images
 
 ### Download an image
@@ -27,16 +25,17 @@ docker load -i <NAME>.tar
 
 docker pull nom_image
 
-```bash
+```console
 docker  pull nginx
 ```
+
 ### Check presence of an image on the system
 
 #### images command
 
 List the images that have already been pulled or downloaded to local host system
 
-```bash
+```console
 docker images
 ```
 
@@ -44,7 +43,7 @@ docker images
 
 docker history nom_image
 
-```bash
+```console
 docker history nginx
 ```
 
@@ -52,7 +51,7 @@ docker history nginx
 
 #### syntax command
 
-```bash
+```console
 # docker tag --help
 
 Usage:  docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
@@ -64,7 +63,7 @@ Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
 Let's say we've tested then nginx image and it's working perfectly four our needs.
 We want to make suure we can use this exact image for future deployments
 
-```bash
+```console
 # docker tag nginx:latest nginx:my_blog_stable
 # docker images
 REPOSITORY      TAG           IMAGE_ID      CREATED     SIZE
@@ -84,7 +83,7 @@ We'll use the jenkins' application, for example, and demonstration purposes this
 
 ### command logs
 
-```bash
+```console
 root@ubuntu:~# docker run -dit --name busylogs -p 8080:8080 -p 5000:5000 jenkins/jenkins:lts
 ```
 Check by docker ps if the container is running
@@ -94,7 +93,7 @@ And so how in the world are we going to get that password ?
 Well, we can use the Docker Logs command to view the output provided by this container.
 And, of course, in that output is going to be our password that we need.
 
-```bash
+```console
 docker logs busy_logs
 
 ...
@@ -117,7 +116,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 ```
 #### option -f 
 
-```bash
+```console
 docker -f logs busy_logs
 ```
 So now, if any new output is produced by the container, it will be immediately returned to our screen.
@@ -136,7 +135,7 @@ And that'll give us some space to see when something new shows up here to our lo
 
 #### option --since
 
-```bash
+```console
 docker --since 2011-11-11 logs busy_logs
 ```
 
@@ -144,12 +143,12 @@ docker --since 2011-11-11 logs busy_logs
 
 Les 25 derniers messages du service docker reçus dans les journaux Debian.
 
-```bash
+```console
 journalctl -u docker.service -n 25
 ```
 
 #### option --no-pager pour enrouler toute la longueur des lignes
 
-```bash
+```console
 sudo journalctl --no-pager -u docker.service -n 25
 ```
