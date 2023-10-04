@@ -1,0 +1,6 @@
+ - **%** Select all text
+ - **A-S** Split selection in lines
+ - **A** Go to end of lines
+ - **Type your Pattern**
+ - **<Esc>** to quit Insert mode
+ - **;** to quit multicursor mode
