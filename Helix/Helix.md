@@ -4,3 +4,4 @@
 
 - [Inserting numbers as prefixes to existing lines](AddingNumbersAsPrefixToExistingLines.md)
 - [Inserting a pattern at the end of each line](AddingPatternAtEndOfEachLine.md)
+- [Increment every number or date in line selected](IncrementEveryNumberInALine.md)
